@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - npm install      # Installs all dependencies listed in package.json
+artifacts:
+  files:
+    - '**/*'             # Includes all files in the folder as build output
