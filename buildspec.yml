@@ -1,11 +1,16 @@
 version: 0.2
+
 phases:
   install:
+    runtime-versions:
+      python: 3.8  # or whichever Python version your app requires
     commands:
-      - npm install
+      - pip install -r requirements.txt
+
   build:
     commands:
-      - npm run build # only if your app has a build step, otherwise omit this line
+      - echo "Build phase is complete."  # Placeholder command; add build commands if needed
+
 artifacts:
   files:
     - '**/*'
